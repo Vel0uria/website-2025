@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nanum+Gothic+Coding&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Sofia D.</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- The website JavaScript file -->
+
+    <script src="/script.js" defer></script>
+    <script src="/p5.js"></script>
+    <script src="/sketch.js"></script>
+  </head>
+  <body>
+    <div class="wrapper" id="test">
+      <div class="content" role="main">
+        <nav class="navbar">
+          <div class="links">
+            <a href="/">Home</a>
+            <span class="divider">|</span>
+            <a href="https://sofia-portafolio.glitch.me">Portafolio</a>
+          </div>
+        </nav>
+        <div class="welcome">
+          <p class="title">¡Bienvenidxs a la web de Sofia!</p>
+          <p>
+            Clickea el botón "[+]" en la parte superior derecha de cada ventana
+            para ver más información.
+          </p>
+          <div class="subtitle" onclick="toggleDed()">{*}</div>
+          <div id="dedicatoria">
+            A los navegantes del nuevo Eón: que este sitio sea un punto de
+            encuentro en el inmenso mar de ceros y unos.
+          </div>
+        </div>
+
+        <div class="windows">
+          <div class="cardCol">
+            <div class="window">
+              <div class="card-title">
+                <p>Tetragrammaton</p>
+                <span onclick="toggleText(this)">
+                  <p>[+]</p>
+                </span>
+              </div>
+              <div class="card-img">
+                <img
+                  src="https://cdn.glitch.global/558b2932-66a6-4ebc-a2f2-09216332cbe0/picapiojos.jpg?v=1729837288903"
+                />
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem Ipsum es simplemente el texto de relleno de las
+                  imprentas y archivos de texto. Lorem Ipsum ha sido el texto de
+                  relleno estándar de las industrias desde el año 1500, cuando
+                  un impresor (N. del T. persona que se dedica a la imprenta)
+                  desconocido usó una galería de textos y los mezcló de tal
+                  manera que logró hacer un libro de textos especimen. No sólo
+                  sobrevivió 500 años, sino que tambien ingresó como texto de
+                  relleno en documentos electrónicos, quedando esencialmente
+                  igual al original.
+                  <br />
+                  Más detalles
+                  <a
+                    href="https://sofia-d.glitch.me/tetragrammaton.html"
+                    target="_blank"
+                    >aquí</a
+                  >
+                </p>
+              </div>
+              <div class="card-subtitle">
+                <p>2024</p>
+                <p>3D</p>
+              </div>
+            </div>
+            <div class="window">
+              <div class="card-title">
+                <p>Oro y sangre</p>
+                <span onclick="toggleText(this)">
+                  <p>[+]</p>
+                </span>
+              </div>
+              <div class="card-img">
+                <img
+                  src="https://cdn.glitch.global/558b2932-66a6-4ebc-a2f2-09216332cbe0/maco.jpg?v=1729837296326"
+                />
+              </div>
+              <div class="card-body">
+                <p>
+                  Oro y sangre es una serie de obras que hacen homenaje a la
+                  Tierra a partir de los símbolos sagrados provenientes del
+                  barroco mexicano y las serpientes prehispánicas,
+                  particularmente la Virgen de Guadalupe. Si bien el territorio
+                  actualmente conocido como México ha pasado por incontables
+                  momentos de destrucción de símbolos e imposiciones religiosas,
+                  las manifestaciones sagradas de la Tierra sobreviven de formas
+                  sutiles. En lugar de desaparecer, conviven y se funden
+                  sutilmente con las imágenes de la religión imperante. <br />
+                  <br />
+                  Tras el paso de los siglos, la Tierra mexicana se ha
+                  convertido en un sincretismo de serpientes acéfalas con
+                  entrañas abismales y escamas churriguerescas bañadas en oro y
+                  sangre.
+                </p>
+              </div>
+              <div class="card-subtitle">
+                <p>2024</p>
+                <p>Exposición</p>
+              </div>
+            </div>
+            <div class="window">
+              <div class="card-title">
+                <p>Espejo universal</p>
+                <span onclick="toggleText(this)">
+                  <p>[+]</p>
+                </span>
+              </div>
+              <div class="card-img">
+                <img
+                  src="https://cdn.glitch.global/558b2932-66a6-4ebc-a2f2-09216332cbe0/autorretrato.png?v=1732326189707"
+                />
+              </div>
+              <div class="card-body">
+                <p>
+                  Animación interactiva - autorretrato - espejo de pixeles.
+                  <br />
+                  Hecho mediante la herramienta de código abierto P5js. Prueba
+                  la vista interactiva
+                  <a
+                    href="https://editor.p5js.org/Sofia_D/full/Hr-s3cYvx"
+                    target="_blank"
+                    >aquí</a
+                  >
+                </p>
+              </div>
+              <div class="card-subtitle">
+                <p>2024</p>
+                <p>Autorretrato interactivo</p>
+              </div>
+            </div>
+          </div>
+          <div class="cardCol">
+            <div class="window">
+              <div class="card-title">
+                <p>Oro y sangre - Cirio</p>
+                <span onclick="toggleText(this)">
+                  <p>[+]</p>
+                </span>
+              </div>
+              <div class="card-img">
+                <img
+                  src="https://cdn.glitch.global/558b2932-66a6-4ebc-a2f2-09216332cbe0/oro-sangre-pic.png?v=1731726991259"
+                />
+              </div>
+              <div class="card-body">
+                <p>
+                  Veladora instalada sobre una plataforma giratoria con imagen
+                  intervenida de la Virgen de Guadalupe. Esta obra forma parte
+                  de la serie Oro y sangre, que habla de la representación de la
+                  Tierra como una acumulación de símbolos que se mezclan y
+                  habitan en la mente de los habitantes de un territorio. El
+                  movimiento giratorio imita precisamente el movimiento de
+                  rotación del planeta, con el propósito de que cada giro evoque
+                  una plegaria por la Tierra y todos sus habitantes.
+                </p>
+              </div>
+              <div class="card-subtitle">
+                <p>2024</p>
+                <p>Instalación</p>
+              </div>
+            </div>
+            <div class="window">
+              <div class="card-title">
+                <p>Entelequias</p>
+                <span onclick="toggleText(this)">
+                  <p>[+]</p>
+                </span>
+              </div>
+              <div class="card-img">
+                <img
+                  src="https://cdn.glitch.global/558b2932-66a6-4ebc-a2f2-09216332cbe0/entelequias.png?v=1729837784165"
+                />
+              </div>
+              <div class="card-body">
+                <p>
+                  Colección de cartas con relatos recolectados de usuarixs
+                  anónimxs en diversos foros de internet. Cada relato se
+                  acompaña de una fotografía que pretende dar testimonio a lo
+                  que el relato cuenta, sin embargo, dicho testimonio es falso,
+                  ya que las fotografías provienen de mi album familiar.
+                  <br />
+                  <br />
+                  Con esto propongo que la evidencia fotográfica, que se
+                  enfatiza como objetiva y verdadera, en el fondo esconde una
+                  profunda relación con las creencias, las emociones y la
+                  subjetividad.
+                </p>
+              </div>
+              <div class="card-subtitle">
+                <p>2020</p>
+                <p>Colección de cartas</p>
+              </div>
+            </div>
+            <div class="window">
+              <div class="card-title">
+                <p>El corazón de las cartas</p>
+                <span onclick="toggleText(this)">
+                  <p>[+]</p>
+                </span>
+              </div>
+              <div class="card-img">
+                <img
+                  src="https://cdn.glitch.global/558b2932-66a6-4ebc-a2f2-09216332cbe0/garza.png?v=1729838248368"
+                />
+              </div>
+              <div class="card-body">
+                <p>
+                  Colección de imágenes y animaciones provenientes de del juego
+                  de lotería mexicana. Las cartas que conforman esta serie
+                  fueron intervenidas mediante procesos análogos y digitales
+                  para generar narrativas visuales que relatan la influencia que
+                  los procesos de transmutación que los símbolos cotidianos y
+                  tradicionales ejercen en la mente, particularmente en el
+                  territorio del inconsciente.
+                </p>
+              </div>
+              <div class="card-subtitle">
+                <p>2024</p>
+                <p>Slit-scan digital</p>
+              </div>
+            </div>
+          </div>
+          <div class="cardCol">
+            <div class="window">
+              <div class="card-title">
+                <p>Uroboros</p>
+                <span onclick="toggleText(this)">
+                  <p>[+]</p>
+                </span>
+              </div>
+              <div class="card-img">
+                <img
+                  src="https://cdn.glitch.global/558b2932-66a6-4ebc-a2f2-09216332cbe0/aleph_light.gif?v=1729839146950"
+                />
+              </div>
+              <div class="card-body">
+                <p>
+                  Animaciones cíclicas creadas mediante algoritmos
+                  computacionales que nacieron a partir de una migración de
+                  mitos y otras expresiones espirituales a los medios digitales.
+                  <br /><br />
+                  El gif animado tiene una relación intrínseca con el mito del
+                  eterno retorno que ilustra el mecanismo universal en el cual
+                  nos encontramos inmersos, donde alejarse implica regresar,
+                  soñar implica despertar y morir es siempre renacer formando un
+                  ciclo como la serpiente Uróboros que gira constantemente sin
+                  principio ni fin. De igual manera, la estructura cíclica del
+                  gif y su constante repetición sin la posibilidad de play ni
+                  pausa, lo convierte en una serpiente de pixeles que muerde su
+                  cola una y otra vez.os, quedando esencialmente igual al
+                  original.
+                </p>
+              </div>
+              <div class="card-subtitle">
+                <p>2023</p>
+                <p>GIFs</p>
+              </div>
+            </div>
+            <div class="window">
+              <div class="card-title">
+                <p>Indiziplinas rizomáticas</p>
+                <span onclick="toggleText(this)">
+                  <p>[+]</p>
+                </span>
+              </div>
+              <div class="card-img">
+                <img
+                  src="https://cdn.glitch.global/558b2932-66a6-4ebc-a2f2-09216332cbe0/100_0018.png?v=1729656363319"
+                />
+              </div>
+              <div class="card-body">
+                <p>
+                  Proyecto colectivo y procesual que propone diferentes formas
+                  de ampliar los espacios naturales y amplificar el cuerpo. El
+                  colectivo está formado por las artistas Lucía Taibo, Helene
+                  Héctor, Eurídice Navi, Eréndira Gómez y Sofía De la Cueva.
+                  Como grupo, tratamos de encontrar formas alternativas de
+                  relacionarnos tanto con el entorno como con nuestro cuerpo a
+                  través de interacciones que no se basen en el consumismo ni en
+                  las jerarquías, y que fomenten la curiosidad, el juego y la
+                  poesía.
+                </p>
+              </div>
+              <div class="card-subtitle">
+                <p>2022</p>
+                <p>Performance, instalación</p>
+              </div>
+            </div>
+            <div class="window">
+              <div class="card-title">
+                <p>Tecnomancias</p>
+                <span onclick="toggleText(this)">
+                  <p>[+]</p>
+                </span>
+              </div>
+              <div class="card-img">
+                <img
+                  src="https://cdn.glitch.global/558b2932-66a6-4ebc-a2f2-09216332cbe0/espejo-universal.png?v=1732330466537"
+                />
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem Ipsum es simplemente el texto de relleno de las
+                  imprentas y archivos de texto. Lorem Ipsum ha sido el texto de
+                  relleno estándar de las industrias desde el año 1500, cuando
+                  un impresor (N. del T. persona que se dedica a la imprenta)
+                  desconocido usó una galería de textos y los mezcló de tal
+                  manera que logró hacer un libro de textos especimen. No sólo
+                  sobrevivió 500 años, sino que tambien ingresó como texto de
+                  relleno en documentos electrónicos, quedando esencialmente
+                  igual al original.
+                </p>
+              </div>
+              <div class="card-subtitle">
+                <p>2022</p>
+                <p>Performance, instalación</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="links">
+          <a>Insta</a>
+          <span class="divider">|</span>
+          <a>X</a>
+          <span class="divider">|</span>
+          <a>Mail: sofleos@gmail.com</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

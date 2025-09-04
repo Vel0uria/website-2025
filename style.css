@@ -1,0 +1,275 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #24292c;
+  --color-text-main: #f8f3ff;
+  --color-text-header: #f8a8ff;
+  --color-primary: #ffff00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "Nanum Gothic Coding", monospace;
+  --font-family-header: "Nanum Gothic Coding", monospace;
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Navigation grid */
+
+.navbar {
+  border-bottom: 4px solid #f8a8ff;
+  padding: 1rem 0 0.75rem 0;
+  background-color: aquamarine;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #f8a8ff;
+  background-color: #eff4f9ab;
+  height: 75px;
+  margin-top:15px;
+}
+
+a {
+  text-decoration: none;
+  color: #f030ff;
+}
+
+a:hover {
+  background: #40137e;
+}
+
+.footer a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  font-family: Nanum Gothic Coding;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  /* color: #000; */
+  text-decoration: none;
+  border-style: none;
+}
+.footer a:hover {
+  background: var(--color-primary);
+}
+
+.navbar .links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
+
+.footer .links {
+    padding: 0.5rem 1rem 1.5rem;
+}
+.divider {
+  padding: 0 1rem;
+  color: #f8a8ff;
+}
+
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+canvas {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
+body {
+  font-family: "Nanum Gothic Coding", monospace;
+  background-color: var(--color-bg);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+.welcome {
+  margin: 0;
+  padding: 15px;
+  background-color: #eff4f9ab;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #ec7af6;
+  font-family: "Nanum Gothic Coding", monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 105%;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: flex-end;
+  color: #ec7af6;
+  cursor: pointer;
+}
+
+#dedicatoria {
+  display:none; 
+  font-size:13px;
+  justify-content: flex-end;
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  background-color: #7fffd473;
+  /*place-items: center;
+  margin: 0 1rem;
+  background-color: #bfd0d1db;*/
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.windows {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cardCol{
+  display:flex;
+  flex-direction: column;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  height: fit-content;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: black;
+  padding: 5px 0;
+  margin-top: 25px;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: var(--color-text-header);
+  justify-content: space-around;
+}
+
+.window span {
+  cursor:pointer;
+}
+
+.card-title {
+  color: var(--color-text-header);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9px;
+  font-size: 14px;
+}
+
+.card-subtitle {
+  color: var(--color-text-header);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9px;
+  font-size: 12px;
+}
+
+.card-img {
+  display: flex;
+  height: 300px;
+  width:300px;
+  justify-content: center;
+  margin-left: -2px;
+}
+
+.card-img img {
+  object-fit: cover;
+  width: 90%;
+  margin: 10px;
+}
+
+.card-body {
+  color: white;
+  font-size: 12.5px;
+  margin: 10px;
+  display:none;
+}
+
+/* Very light scaling for our illustration */
+.illustration {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  margin-top: var(--image-margin);
+}
+
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+}
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
+/* Subheading */
+h2 {
+  color: var(--color-text-header);
+}
+
+/* Interactive image */
+.illustration:active {
+  transform: translateY(5px);
+}
+
+/* Button dip
+- Toggling this class on and off will move it down and up again
+- The button transition property above determines the speed of the translate (500ms)
+*/
+.dipped {
+  transform: translateY(5px);
+}
+
+/* Links that open files in the editor */
+.fileopener {
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 3px solid var(--color-primary);
+  color: var(--color-secondary);
+}
+.fileopener:hover {
+  border-bottom: 3px solid var(--color-secondary);
+}
